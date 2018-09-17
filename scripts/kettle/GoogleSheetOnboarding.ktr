@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>GoogleSheetOnboarding</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/08/31 14:32:26.139</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/08/31 14:32:26.139</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>need to fix the status fields in the DB - they are integers and not varchar fields.
+same for company type.
+created by and updated by are also integers?</note>
+      <xloc>256</xloc>
+      <yloc>288</yloc>
+      <width>488</width>
+      <heigth>58</heigth>
+      <fontname>.SF NS Text</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>nc2 AWS test</name>
+    <server>netchaintest.cdbmasugh7kc.us-west-2.rds.amazonaws.com</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>nc2</database>
+    <port>3306</port>
+    <username>netchain</username>
+    <password>Encrypted 2be98afc86aa7f2e4bf1cbd648fc0fc8e</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Filter rows</from>
+      <to>Replace in string</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Google Spreadsheet Input</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Merge Rows (diff)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge Rows (diff)</from>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows</from>
+      <to>Select values 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 2</from>
+      <to>Google Spreadsheet Output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Replace in string</from>
+      <to>Add constants</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add constants</from>
+      <to>Get System Info</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get System Info</from>
+      <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Table output</from>
+      <to>Select values 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 3</from>
+      <to>Merge Rows (diff)</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Replace in string</send_true_to>
+    <send_false_to>Merge Rows (diff)</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>status</leftvalue>
+        <function>=</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Approved</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Google Spreadsheet Input</name>
+    <type>GoogleSpreadsheetInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <serviceEmail>platformonboarding@platformonboarding.iam.gserviceaccount.com</serviceEmail>
+    <spreadsheetKey>1DqM5AdQZnExl135nnXjtnRsYNR_xJg5ESRTEgLApN5Y</spreadsheetKey>
+    <worksheetId>default</worksheetId>
+    <privateKeyStore><![CDATA[MIIJqwIBAzCCCWQGCSqGSIb3DQEHAaCCCVUEgglRMIIJTTCCBXEGCSqGSIb3DQEHAaCCBWIEggVeMIIFWjCCBVYGCyqGSIb3DQEMCgECoIIE+zCCBPcwKQYKKoZIhvcNAQwBAzAbBBSbna1U7HF/iOGNVCJ57ZSby1OwswIDAMNQBIIEyNkmXEbZQ8kNIW6Z74x1lwkvN5/OTLQDdMBBVrBcuV6MFMxikrxrxCwXHzOEFAJz8ctJCfqC9EcxbBBJX0ZK/nzxgSv81ni+0Bp5wKmv8Ok/GK6GaZuC+tnV47K95VfMPClFGvnZ0K0V+5RbsIv4kRpZvbSVlR5Y1M+ejtg4PVSD5E2azlVZJEZNBQe2MAtmhf+LwNoUuwZVh0HPBbuwq6LU4cySKNwL3UrN/Jv2A+51b5WUPKqQmuzoRiJ/M/Et2rtSymq+zk11YLGaxrlIBSXeZN/ULcAzO03R9sBLg4uMume17HSg2RqTWqbWoKbM/I1Uniefu1CiIRzg4i8+AV8ABMRC4hbWbo/hPXBsiwviEbhyo4+CDFhuXMBvMoRjDzvU97+WwS9w1mwFovN6Hb1WkCtEZO1d4Hoz5KfEN1oHyzRs0VUEw9PqwthQG9tSNRMD4lZv//1iTAwb69bvIwRX1M6seTpYyvDxrgiRHd2GI5XS1EaL/fC9X8+Eciada248O3NTgbzS7XeRNbmTL6Eram7rNYBiqrbMOxfTZprPoxFEvJnnGCckTChbyGzIpBphvkZlkj2wD/5CvNLjSSKoI0krNpaHgTWwsK6ASCXUSi+43xlpC5Eeg8UQtD9Fc1M4YeRTODvWIYxqH6RmAB2v2p56qaW30I1t/sxWh62suWfVLQ6dhOYsDDOMtCKkt8LrmoG/RAvjam+RegUrkX7rJ+rDXLAhJCIybUv07tqULPl5AyaacZ/Ae4QWu1lCzfN3mEYSJdZ1IYc0Xq29vBdH0VEOUY2luJ799rBZGF/Np2JA25Duj7KQs6R4IhbRulAO6c7sJ+Qs8zps0fxMDfFH7SNF/wIqE5EgpQPAMTyed2KRLbXMQzPCfYDVtabHalwN52yAsefOROKwaqDJMBnimONnjoVdxoYNLIBBSligeOCHjjKbHE6S45TjYEsVgeV262bGieIN8X0XMk3l8NuOLnrLjcYQzaudVTajAjwduutjTG18/gbtYDJouchMPtyr7QI6LYRv1EbS8UdAHmKopPQTqnDwj1LlX/JYU53RnkbBb8hI+rc4l3mTO/8/OXL1GJcpF2oIfJvSai0hNyomUl5x9h8NRBroTfxcoyVYXeDhVw1iLtwuYh5VoiEBQhO36LG6SljsaKLKYDBBbEYoc7GDnTw+68UBfW5oeRmm0PisPMuE0FwxSaUwjLS0LNDhQZsEy02eMRflTkSf1hmJy7kPz2TrOzFZgOYFMTIurdH/ruDCs7gD3JhRAG5rwPpwccHRefFIwNkn5+SJi9HpZ9VHNmccCD1RjYL6AHEheNg950y80WB5yASvOHSrVD6raxagoP2xATs3agrvigGaamDjNNYqt2MBpmFS3gXQnYd31xGg5Wd+YeYA8WYEIN8Sxc1oBq25zPz6o8Hpn2ceX+J5fIoS4qmYVeDzeqN44T+EZUxAFc6edg8nkGN+I+qwwfu57ev9A5vIZ51tF717VvkGbxYHb6g6QQKjTLgdfnE4uSWE3Ekw4n4xEsgeQVh28hOHC1vn0n8ZnbFqTamlhHNus/PAfdD077/pubgAZ5LbZwb6uB6GAcmzoZ9fuJCGksEV1aF6P625SEKVF3eOTskAlz3ndDFIMCMGCSqGSIb3DQEJFDEWHhQAcAByAGkAdgBhAHQAZQBrAGUAeTAhBgkqhkiG9w0BCRUxFAQSVGltZSAxNTM2MDgxMzM2NTk3MIID1AYJKoZIhvcNAQcGoIIDxTCCA8ECAQAwggO6BgkqhkiG9w0BBwEwKQYKKoZIhvcNAQwBBjAbBBRJ8eJYbHuX/fSRV7fAUwTGVc9fTQIDAMNQgIIDgOdz0emq9rdIWfVpHKRK2AyxOWSwm9Z5ulK9Q9b1aFtpVJpHpnApNwtLVzy1a1AnV+D6zClvD8mGbhMpcqiTXLOQ4BGBTBJ1C0D8vZJ9EBMUFBHDloyTn9rZ/V4r6Xs48vk6Nq3mPueoHMZagRe75n3YVH8e20sEe5KxUJclcc2+AI/wEN9TLGaqhqn8XqJiZiYcp9rq85fSZ8fuvHpYdOSmT0OA7cBSKvYLkgBwuXJivCxx0Popp4kKRsWfjCXAnOB8tV55QNOqEjlGlfyk3g+ruQQLGl52qmBcwufhsxzjP89hGFb8g+XBEIrpjg+ljFfBJwl6V4ZLJw4IKrIf21/Efk3QxqMXDDBGjBAeVhwK8MbG6II6qkmI++xPbymOA6gvJv95FHn9eSqvHu4YmXG/n0x0bae88JDwptv1Nvp0wU5UoHJjl1QYAYsgP5/C5x2zXDgNpPm0Gatzs38PKWsdT3jngXMztk4SjM4lXLmWpmk5EkEnSE29d4Gjdb14eXLvbQoXF1y/tEKekufBUh+bn0zXij1F76TFJcCK33MKuhotnRnj6eukwCzgumQ1Gldg9S/ROrMToFnY3BwLUFZuDYeShTt/Rf+IBVMnXg7BhTb2rYYKVpYOkIbZ0b7s6JCBK4w0V9UZFZie7cS/nFq7ru1BbDKwJhHTIJDPfL+Fqysh3ckZRKaBTv75t48/d2hYce/E4qLi74xM5DWIKXahgJqc8AR4ixV0kZcNJV1YWGF00NF/6BzIUt1zhYF9O3eMzJILYl8X2ASVr9ilm47Qz6NP/h/qqxIyO1x8tzIb4dzva45WY3sKpUmFYyvSTVTyYQwMNWlcrYZE3hNvqAs2VvkMveQpFc9ksoKZ+1ZJeJU6zBsL2/11QCUBP0jx9ckHS/g0drmNAilxoktCkT153XffsA+53Hfiw3Jw8CL83uAnG86lA72lzKm8c/qh77IhKTW6Eifz/0Yks12RcrQgLffPN/RFx+fi82ZxNQ12QSRDRq6SkKIPQq54m2cKRXF8OZ60WI+XQXgk4XtI6VbW6Aa7zJShs63m/Z8sT2zjNK0bK9L1qtnWIunapGzaVYdtzERscO71qqxuLQxbtZCXv6wmgxaw0aeh8ibPE8A02G667e8rGcFoZcy+C1X/mVSCx5xV+PJe0Dm5v4z0CxzNXdKMkDCwXxtGIVqgJbzsMD4wITAJBgUrDgMCGgUABBTis+mqkEvVDVJMXDJMbGwpXwN3JAQUD8Op69t4WysDk0xQMa+wWnDTzJMCAwGGoA==]]></privateKeyStore>
+    <fields>
+      <field>
+        <field_name>timestamp</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>emailaddress</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companyname</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companytype</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>contactfirstname</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>contactlastname</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>contactemail</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companyaddressstreet1</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companyaddresssuiteetc.</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companyaddresscity</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companyaddressstate</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companyzipcode</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>nameofthecompanyowner</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>dateofbirthofthebusinessownerceo</field_name>
+        <field_type>Date</field_type>
+        <field_format>dd/MM/yyyy</field_format>
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>genderofthebusinessownerceo</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>nationalityofthebusinessowner</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>tin</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>companywebsite</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>status</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+      <field>
+        <field_name>partner</field_name>
+        <field_type>String</field_type>
+        <field_format />
+        <field_currency />
+        <field_decimal />
+        <field_group />
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+        <field_trim_type>none</field_trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>80</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Google Spreadsheet Output</name>
+    <type>GoogleSpreadsheetOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <serviceEmail>platformonboarding@platformonboarding.iam.gserviceaccount.com</serviceEmail>
+    <spreadsheetKey>1DqM5AdQZnExl135nnXjtnRsYNR_xJg5ESRTEgLApN5Y</spreadsheetKey>
+    <worksheetId>default</worksheetId>
+    <privateKeyStore><![CDATA[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]]></privateKeyStore>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge Rows (diff)</name>
+    <type>MergeRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <keys>
+      <key>timestamp</key>
+      <key>emailaddress</key>
+      <key>companyname</key>
+      <key>companytype</key>
+      <key>contactfirstname</key>
+      <key>contactlastname</key>
+      <key>contactemail</key>
+      <key>companyaddressstreet1</key>
+      <key>companyaddresssuiteetc.</key>
+      <key>companyaddresscity</key>
+      <key>companyaddressstate</key>
+      <key>companyzipcode</key>
+      <key>nameofthecompanyowner</key>
+      <key>dateofbirthofthebusinessownerceo</key>
+      <key>genderofthebusinessownerceo</key>
+      <key>nationalityofthebusinessowner</key>
+      <key>tin</key>
+      <key>companywebsite</key>
+      <key>status</key>
+      <key>partner</key>
+    </keys>
+    <values>
+      <value>timestamp</value>
+      <value>emailaddress</value>
+      <value>companyname</value>
+      <value>companytype</value>
+      <value>contactfirstname</value>
+      <value>contactlastname</value>
+      <value>contactemail</value>
+      <value>companyaddressstreet1</value>
+      <value>companyaddresssuiteetc.</value>
+      <value>companyaddresscity</value>
+      <value>companyaddressstate</value>
+      <value>companyzipcode</value>
+      <value>nameofthecompanyowner</value>
+      <value>dateofbirthofthebusinessownerceo</value>
+      <value>genderofthebusinessownerceo</value>
+      <value>nationalityofthebusinessowner</value>
+      <value>tin</value>
+      <value>companywebsite</value>
+      <value>status</value>
+      <value>partner</value>
+    </values>
+    <flag_field>flagfield</flag_field>
+    <reference>Filter rows</reference>
+    <compare>Select values 3</compare>
+    <compare>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Replace in string</name>
+    <type>ReplaceString</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>status</in_stream_name>
+        <out_stream_name />
+        <use_regex>no</use_regex>
+        <replace_string>Approved</replace_string>
+        <replace_by_string>In System</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string />
+        <whole_word>yes</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>timestamp</name>
+      </field>
+      <field>
+        <name>emailaddress</name>
+      </field>
+      <field>
+        <name>companyname</name>
+      </field>
+      <field>
+        <name>companytype</name>
+      </field>
+      <field>
+        <name>contactfirstname</name>
+      </field>
+      <field>
+        <name>contactlastname</name>
+      </field>
+      <field>
+        <name>contactemail</name>
+      </field>
+      <field>
+        <name>companyaddressstreet1</name>
+      </field>
+      <field>
+        <name>companyaddresssuiteetc.</name>
+      </field>
+      <field>
+        <name>companyaddresscity</name>
+      </field>
+      <field>
+        <name>companyaddressstate</name>
+      </field>
+      <field>
+        <name>companyzipcode</name>
+      </field>
+      <field>
+        <name>nameofthecompanyowner</name>
+      </field>
+      <field>
+        <name>dateofbirthofthebusinessownerceo</name>
+      </field>
+      <field>
+        <name>genderofthebusinessownerceo</name>
+      </field>
+      <field>
+        <name>nationalityofthebusinessowner</name>
+      </field>
+      <field>
+        <name>tin</name>
+      </field>
+      <field>
+        <name>companywebsite</name>
+      </field>
+      <field>
+        <name>status</name>
+      </field>
+      <field>
+        <name>partner</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>status</name>
+        <rename>status</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type>normal</storage_type>
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>timestamp</name>
+      </field>
+      <field>
+        <name>emailaddress</name>
+      </field>
+      <field>
+        <name>companyname</name>
+      </field>
+      <field>
+        <name>companytype</name>
+      </field>
+      <field>
+        <name>contactfirstname</name>
+      </field>
+      <field>
+        <name>contactlastname</name>
+      </field>
+      <field>
+        <name>contactemail</name>
+      </field>
+      <field>
+        <name>companyaddressstreet1</name>
+      </field>
+      <field>
+        <name>companyaddresssuiteetc.</name>
+      </field>
+      <field>
+        <name>companyaddresscity</name>
+      </field>
+      <field>
+        <name>companyaddressstate</name>
+      </field>
+      <field>
+        <name>companyzipcode</name>
+      </field>
+      <field>
+        <name>nameofthecompanyowner</name>
+      </field>
+      <field>
+        <name>dateofbirthofthebusinessownerceo</name>
+      </field>
+      <field>
+        <name>genderofthebusinessownerceo</name>
+      </field>
+      <field>
+        <name>nationalityofthebusinessowner</name>
+      </field>
+      <field>
+        <name>tin</name>
+      </field>
+      <field>
+        <name>companywebsite</name>
+      </field>
+      <field>
+        <name>status</name>
+      </field>
+      <field>
+        <name>partner</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>timestamp</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>nc2 AWS test</connection>
+    <schema />
+    <table>companies</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>name</column_name>
+        <stream_name>companyname</stream_name>
+      </field>
+      <field>
+        <column_name>address</column_name>
+        <stream_name>companyaddressstreet1</stream_name>
+      </field>
+      <field>
+        <column_name>email</column_name>
+        <stream_name>contactemail</stream_name>
+      </field>
+      <field>
+        <column_name>created_at</column_name>
+        <stream_name>created_at</stream_name>
+      </field>
+      <field>
+        <column_name>updated_at</column_name>
+        <stream_name>updated_at</stream_name>
+      </field>
+      <field>
+        <column_name>created_by</column_name>
+        <stream_name>created_by</stream_name>
+      </field>
+      <field>
+        <column_name>updated_by</column_name>
+        <stream_name>updated_by</stream_name>
+      </field>
+      <field>
+        <column_name>category_id</column_name>
+        <stream_name>category_id</stream_name>
+      </field>
+      <field>
+        <column_name>status</column_name>
+        <stream_name>temp_status</stream_name>
+      </field>
+      <field>
+        <column_name>company_type</column_name>
+        <stream_name>temp_company_type</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add constants</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>created_by</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>updated_by</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>category_id</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>2</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>temp_status</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>temp_company_type</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get System Info</name>
+    <type>SystemInfo</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>created_at</name>
+        <type>system date (variable)</type>
+      </field>
+      <field>
+        <name>updated_at</name>
+        <type>system date (variable)</type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 3</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>timestamp</name>
+        <rename />
+      </field>
+      <field>
+        <name>emailaddress</name>
+        <rename />
+      </field>
+      <field>
+        <name>companyname</name>
+        <rename />
+      </field>
+      <field>
+        <name>companytype</name>
+        <rename />
+      </field>
+      <field>
+        <name>contactfirstname</name>
+        <rename />
+      </field>
+      <field>
+        <name>contactlastname</name>
+        <rename />
+      </field>
+      <field>
+        <name>contactemail</name>
+        <rename />
+      </field>
+      <field>
+        <name>companyaddressstreet1</name>
+        <rename />
+      </field>
+      <field>
+        <name>companyaddresssuiteetc.</name>
+        <rename />
+      </field>
+      <field>
+        <name>companyaddresscity</name>
+        <rename />
+      </field>
+      <field>
+        <name>companyaddressstate</name>
+        <rename />
+      </field>
+      <field>
+        <name>companyzipcode</name>
+        <rename />
+      </field>
+      <field>
+        <name>nameofthecompanyowner</name>
+        <rename />
+      </field>
+      <field>
+        <name>dateofbirthofthebusinessownerceo</name>
+        <rename />
+      </field>
+      <field>
+        <name>genderofthebusinessownerceo</name>
+        <rename />
+      </field>
+      <field>
+        <name>nationalityofthebusinessowner</name>
+        <rename />
+      </field>
+      <field>
+        <name>tin</name>
+        <rename />
+      </field>
+      <field>
+        <name>companywebsite</name>
+        <rename />
+      </field>
+      <field>
+        <name>status</name>
+        <rename />
+      </field>
+      <field>
+        <name>partner</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
